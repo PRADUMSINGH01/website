@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { FaPhoneAlt, FaUser, FaUserPlus } from 'react-icons/fa';
 import { FiMenu } from 'react-icons/fi';
-
+import Link from 'next/link';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -21,20 +21,20 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Left Section - Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-1">
               <div className="h-8 w-8 bg-white rounded-full flex items-center justify-center">
-                <span className="text-blue-500 font-bold text-xl">C</span>
+                <span className="text-blue-500 font-bold text-xl">P</span>
               </div>
               <span className={`text-xl font-bold ${isScrolled ? 'text-white' : 'text-blue-500'}`}>
-                CarPartsPro
+                arts Point
               </span>
-            </div>
+            </div>  
           </div>
 
           {/* Center Section - Navigation (hidden on mobile) */}
           <div className="hidden md:block">
             <div className="flex space-x-8">
-              <a href="#" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
+              <a href="/ " className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
                 Parts Catalog
               </a>
               <a href="#" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
@@ -52,7 +52,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-2">
               <FaPhoneAlt className={`h-4 w-4 ${isScrolled ? 'text-white' : 'text-blue-500'}`} />
               <span className={`text-sm ${isScrolled ? 'text-white' : 'text-blue-500'}`}>
-                +1 (555) 123-4567
+                +91 5555-123-4567
               </span>
             </div>
 
@@ -60,11 +60,11 @@ export default function Navbar() {
             <div className="flex space-x-2">
               <button className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-colors ${isScrolled ? 'text-white hover:bg-blue-600' : 'text-blue-500 hover:bg-blue-50'}`}>
                 <FaUser className="h-4 w-4" />
-                <span className="text-sm hidden md:inline">Login</span>
+                <Link href={'/Login'} className="text-sm hidden md:inline">Login</Link>
               </button>
               <button className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-colors ${isScrolled ? 'text-white hover:bg-blue-600' : 'text-blue-500 hover:bg-blue-50'}`}>
                 <FaUserPlus className="h-4 w-4" />
-                <span className="text-sm hidden md:inline">Register</span>
+                <Link href={'/Register'} className="text-sm hidden md:inline">Register</Link>
               </button>
             </div>
 
