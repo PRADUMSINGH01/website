@@ -225,8 +225,8 @@ export default function Register() {
 
         <p className="mt-8 text-center text-sm text-gray-600">
           Already have an account?{' '}
-          <a href="/login" className="text-blue-600 hover:text-blue-500 font-medium">
-            Sign in
+          <a href="/Login" className="text-blue-600 hover:text-blue-500 font-medium">
+          Login
           </a>
         </p>
       </motion.div>

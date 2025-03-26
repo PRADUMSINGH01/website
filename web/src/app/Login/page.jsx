@@ -99,7 +99,7 @@ export default function LoginPage() {
               disabled={isSubmitting}
               className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:bg-blue-400 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? 'Signing in...' : 'Sign in'}
+              {isSubmitting ? 'Signing in...' : 'Login'}
             </button>
           </motion.div>
         </form>
@@ -136,7 +136,7 @@ export default function LoginPage() {
         </div>
 
         <p className="mt-8 text-center text-sm text-gray-600">
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <a href="/Register" className="text-blue-600 hover:text-blue-500 font-medium">
             Register
           </a>
