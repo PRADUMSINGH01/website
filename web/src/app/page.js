@@ -18,7 +18,6 @@ export default function Home() {
  <SliderMainpge/>
  <SearchByname/>
 <PopularBrands/>
-<FullProductPage/>
 <SearchByCatCard/>
 <HeroBanner/>
 <Quality/>

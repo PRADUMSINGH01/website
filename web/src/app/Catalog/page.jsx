@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FiFilter, FiChevronDown, FiStar } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Dialog } from '@headlessui/react';
+import Link from 'next/link';
 
 
 const CatalogPage = () => {
@@ -25,6 +26,22 @@ const CatalogPage = () => {
       brand: 'BMC',
       price: 89.99,
       rating: 4,
+      image: '/air-filter.jpg',
+    },
+    {
+      id: 2,
+      name: 'Performance Air Filter',
+      brand: 'BMC',
+      price: 49.99,
+      rating: 1,
+      image: '/air-filter.jpg',
+    },
+    {
+      id: 3,
+      name: 'Performance Air Filter',
+      brand: 'BMC',
+      price: 894.99,
+      rating: 3,
       image: '/air-filter.jpg',
     },
     // Add more products...
@@ -169,8 +186,13 @@ const CatalogPage = () => {
 
           {/* Products Grid */}
           <div className="flex-1">
+
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+
               {filteredProducts.map(product => (
+                
                 <div
                   key={product.id}
                   className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100"
@@ -217,6 +239,9 @@ const CatalogPage = () => {
                 </div>
               ))}
             </div>
+
+
+
           </div>
         </div>
 

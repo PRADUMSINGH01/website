@@ -2,7 +2,7 @@ import { FaCartPlus, FaCheckCircle, FaRegStar, FaStar } from 'react-icons/fa';
 
 const CarPartCard = ({ part }) => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 py-8 mt-16">
       <div className="grid md:grid-cols-2 gap-8">
         {/* Image Gallery */}
         <div className="grid grid-cols-2 gap-4">
@@ -62,7 +62,7 @@ const CarPartCard = ({ part }) => {
           {/* Add to Cart */}
           <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-colors duration-200">
             <FaCartPlus className="w-5 h-5" />
-            <span>Add to Cart</span>
+            <span>Enquiry Now</span>
           </button>
         </div>
       </div>

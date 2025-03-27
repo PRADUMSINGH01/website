@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiHome, FiUser, FiSettings, FiMail, FiX, FiMenu } from 'react-icons/fi';
+import { FiHome, FiUser, } from 'react-icons/fi';
 
  const Sidebar = ({ isOpen }) => {
   const links = [
     { name: 'Home', path: '/', icon: <FiHome /> },
-    { name: 'Profile', path: '/profile', icon: <FiUser /> },
-    { name: 'Settings', path: '/settings', icon: <FiSettings /> },
-    { name: 'Contact', path: '/contact', icon: <FiMail /> },
+    { name: 'Parts Catalog', path: '/Catalog', icon:<></>},
+    { name: 'Login', path: '/Login', icon: <FiUser /> },
+    { name: 'Register', path: '/Register', icon: <FiUser /> },
   ];
 
   return (
