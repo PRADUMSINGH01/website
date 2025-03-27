@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import PopularBrands from "@/components/ListOfBrand/ListOfBand";
+import FullProductPage from "@/components/Product/FullPageproduct";
 import HeroBanner from "@/components/Review/Herobanner";
 import Quality from "@/components/Review/Quality";
 import ReviewComponent from "@/components/Review/Review";
@@ -17,7 +18,7 @@ export default function Home() {
  <SliderMainpge/>
  <SearchByname/>
 <PopularBrands/>
-
+<FullProductPage/>
 <SearchByCatCard/>
 <HeroBanner/>
 <Quality/>
