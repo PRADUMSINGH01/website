@@ -39,7 +39,7 @@ const PolicyPage = () => {
               <p>We accept returns within 30 days of purchase:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Items must be unused and in original packaging</li>
-                <li>Return shipping costs are customer's responsibility</li>
+                <li>Return shipping costs are customer&apos;s responsibility</li>
                 <li>Refunds processed within 5-7 business days</li>
                 <li>Special order parts are non-returnable</li>
                 <li>Damaged items must be reported within 48 hours</li>
@@ -95,7 +95,7 @@ const PolicyPage = () => {
               <ul className="list-disc pl-6 space-y-2">
                 <li>We collect only necessary personal data</li>
                 <li>Payment information is processed securely</li>
-                <li>We don't sell customer data to third parties</li>
+                <li>We don&apos;t sell customer data to third parties</li>
                 <li>Cookies are used to improve user experience</li>
                 <li>GDPR-compliant data handling</li>
               </ul>
