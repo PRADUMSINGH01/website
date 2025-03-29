@@ -4,6 +4,7 @@ import { FiFilter, FiChevronDown, FiStar } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Dialog } from '@headlessui/react';
 import Link from 'next/link';
+import Firstbadge from '@/components/bedge/Firstbadge';
 
 
 const CatalogPage = () => {
@@ -83,7 +84,7 @@ const CatalogPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-16">
+    <div className="min-h-screen bg-gray-50 mt-16 text-black  ">
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 space-y-4 md:space-y-0">
@@ -214,10 +215,10 @@ const CatalogPage = () => {
                         />
                       ))}
                     </div>
-                    <div className="flex justify-between items-center">
                       <span className="text-lg font-bold text-blue-500">
-                        {product.price.toFixed(2)}
+                       Price : {product.price.toFixed(2)}
                       </span>
+                    <div className="flex justify-between items-center">
                       <div className="flex space-x-2">
                         <a
                           href={`https://wa.me/?text=Hi, I'm interested in ${product.name} (ID: ${product.id})`}
@@ -233,9 +234,21 @@ const CatalogPage = () => {
                         >
                           Enquiry Now
                         </button>
+
+                    
+                  <Link
+                        
+                          className="px-2 py-2 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 text-sm" 
+                          href={`Catalog/${product.id}`}
+                        >
+                          Read view
+                        </Link> 
                       </div>
+
+                      
                     </div>
                   </div>
+
                 </div>
               ))}
             </div>
@@ -315,6 +328,8 @@ const CatalogPage = () => {
       )}
     </div>
       </div>
+
+   
     </div>
   );
 };

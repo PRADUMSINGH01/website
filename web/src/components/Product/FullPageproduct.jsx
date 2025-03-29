@@ -1,4 +1,8 @@
 import { FaCartPlus, FaCheckCircle, FaRegStar, FaStar } from 'react-icons/fa';
+import Firstbadge from '../bedge/Firstbadge';
+import SimilarProducts from './Simi/similiarProduct';
+import FeaturesAndSpecs from './Feature/Feature';
+import CompatibilityComponent from './Capbility/Capability';
 
 const CarPartCard = ({ part }) => {
   return (
@@ -66,6 +70,14 @@ const CarPartCard = ({ part }) => {
           </button>
         </div>
       </div>
+
+
+<FeaturesAndSpecs/>
+<CompatibilityComponent/>
+
+      <Firstbadge/>
+
+      <SimilarProducts/>
     </div>
   );
 };

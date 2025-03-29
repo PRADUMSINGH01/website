@@ -48,12 +48,10 @@ const [MobileNav , SetMobileNav] = useState(false)
               <a href="/Catalog" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
                 Parts Catalog
               </a>
-              <a href="#" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
-                Brands
+              <a href="/Brand" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
+                Brand
               </a>
-              <a href="#" className={`${isScrolled ? 'text-white' : 'text-blue-500'} hover:text-blue-200 px-3 py-2 rounded-md text-sm font-medium transition-colors`}>
-                Services
-              </a>
+            
             </div>
           </div>
 

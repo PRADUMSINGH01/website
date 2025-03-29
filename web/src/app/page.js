@@ -1,3 +1,5 @@
+import Alert from "@/components/Alert/Alert";
+import FAQSection from "@/components/F&Q/F&Q";
 import Footer from "@/components/Footer/Footer";
 import PopularBrands from "@/components/ListOfBrand/ListOfBand";
 import FullProductPage from "@/components/Product/FullPageproduct";
@@ -12,8 +14,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
- <>
-
+ <div > 
+<Alert type="logout"/>
  <Searchbar/>
  <SliderMainpge/>
  <SearchByname/>
@@ -22,7 +24,7 @@ export default function Home() {
 <HeroBanner/>
 <Quality/>
 <ReviewComponent/>
-<Footer/>
- </>
+<FAQSection/>
+ </div>
   );
 }

@@ -27,7 +27,7 @@ export default function SearchByname() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8  border-blue-500 border mt-5 rounded-xl ">
-<h2 className='text-3xl font-bold mb-3 text-center'>Search by Vehicle</h2>
+<h2 className='text-3xl font-bold mb-3 text-center text-black bg-white'>Search by Vehicle</h2>
 
       <form onSubmit={handleSearch} className="space-y-6">
         {/* Search Input */}
