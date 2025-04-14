@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link";
+
 
 const PopularBrands = () => {
   // Category data with icons
@@ -41,10 +43,11 @@ const PopularBrands = () => {
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
         {categories.map((item, index) => (
+          <Link href={`Catalog/${item.name}`}>
           <div
             key={index}
             className="group relative bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-4 cursor-pointer border border-gray-100 hover:border-blue-200"
-          >
+            >
             <div className="flex flex-col items-center">
               {/* Icon Container */}
               <div className="w-20 h-20 mb-2 text-gray-700 group-hover:text-blue-600 transition-colors flex items-center justify-center">
@@ -56,6 +59,7 @@ const PopularBrands = () => {
               </h3>
             </div>
           </div>
+            </Link>
         ))}
       </div>
     </div>

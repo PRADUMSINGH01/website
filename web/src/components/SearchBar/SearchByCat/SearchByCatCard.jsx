@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaCar, FaRegQuestionCircle } from 'react-icons/fa';
 import { GiCarWheel } from 'react-icons/gi';
 import { SiToyota, SiHonda, SiBmw, SiMercedes, SiAudi, SiVolkswagen, SiFord } from 'react-icons/si';
@@ -27,6 +28,7 @@ const SearchByCatCard    = () => {
             key={brand.name}
             className="group relative bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-4 cursor-pointer border border-gray-100 hover:border-blue-200"
           >
+            <Link href={`/Vehical/${brand.name}`}>
             <div className="flex flex-col items-center">
               {/* Brand Icon Container */}
               <div className="w-20 h-20 mb-4 text-gray-700 group-hover:text-blue-600 transition-colors">
@@ -38,6 +40,7 @@ const SearchByCatCard    = () => {
                 {brand.name}
               </h3>
             </div>
+            </Link>
           </div>
         ))}
       </div>

@@ -19,6 +19,8 @@ const CatalogPage = () => {
     phone: '',
   });
 
+
+  
   // Sample data
   const products = [
     {
@@ -88,7 +90,7 @@ const CatalogPage = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 space-y-4 md:space-y-0">
-          <h1 className="text-2xl font-bold text-gray-900">Automotive Parts Catalog</h1>
+          <h1 className="text-2xl font-bold text-gray-900"> Parts Point Catalog</h1>
           <div className="flex items-center space-x-4 w-full md:w-auto">
             <button
               onClick={() => setShowFilters(!showFilters)}
@@ -251,6 +253,10 @@ const CatalogPage = () => {
 
                 </div>
               ))}
+
+
+
+
             </div>
 
 

@@ -2,6 +2,7 @@
 // components/SearchBar.js
 import { useState } from 'react';
 import { FaSearch, FaCar } from 'react-icons/fa';
+import fetchData from '@/models/fetchdata';
 
 export default function SearchByname() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -10,6 +11,8 @@ export default function SearchByname() {
   const [selectedModification, setSelectedModification] = useState('');
 
   // Mock data
+  const data =  fetchData("Brands", [], { field: "timestamp", direction: "desc" }); 
+    
   const carModels = ['Model S', 'Model 3', 'Mustang', 'Civic', 'Corolla'];
   const modifications = ['Performance', 'Standard', 'Off-road', 'Sport'];
   const years = Array.from({ length: 34 }, (_, i) => 1990 + i).reverse();
